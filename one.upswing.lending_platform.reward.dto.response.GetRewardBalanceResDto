@@ -1,0 +1,53 @@
+java
+package one.upswing.lending_platform.reward.dto.response;
+
+import java.math.BigDecimal;
+
+public class GetRewardBalanceResDto {
+
+    private String accountId;
+    private BigDecimal rewardBalance;
+    private String currency;
+
+    public GetRewardBalanceResDto() {
+    }
+
+    public GetRewardBalanceResDto(String accountId, BigDecimal rewardBalance, String currency) {
+        this.accountId = accountId;
+        this.rewardBalance = rewardBalance;
+        this.currency = currency;
+    }
+
+    public String getAccountId() {
+        return accountId;
+    }
+
+    public void setAccountId(String accountId) {
+        this.accountId = accountId;
+    }
+
+    public BigDecimal getRewardBalance() {
+        return rewardBalance;
+    }
+
+    public void setRewardBalance(BigDecimal rewardBalance) {
+        this.rewardBalance = rewardBalance;
+    }
+
+    public String getCurrency() {
+        return currency;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
+    }
+
+    @Override
+    public String toString() {
+        return "GetRewardBalanceResDto{" +
+                "accountId='" + accountId + '\'' +
+                ", rewardBalance=" + rewardBalance +
+                ", currency='" + currency + '\'' +
+                '}';
+    }
+}
